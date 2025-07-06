@@ -15,8 +15,8 @@ def add(a, b):
 @app.get("/subtract")
 def subtract(a, b):
     """Subtract b from a and return the result."""
-    # result = float(a) - float(b)
-    result = a-b
+    result = float(a) - float(b)
+    # result = a-b
     return {"operation": "subtract", "a": a, "b": b, "result": result}
 
 @app.get("/")
